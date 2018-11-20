@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>THAI HERBAL</title>
+
+    <!-- Bootstrap core CSS -->
+
+    <link href="../User/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../https://fonts.googleapis.com/css?family=Kanit" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../img/icon2.png" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="../User/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+    <link href="css/business-casual.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <h1 class="site-heading text-center text-white d-none d-lg-block">
+        <span class="site-heading-upper text-primary mb-3">ระบบจัดการฐานข้อมูลสมุนไพรไทย</span>
+        <span class="site-heading-lower">THAI HERBAL</span>
+    </h1>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item  px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="index.php">ค้นหา</a>
+                    </li>
+                    <li class="nav-item active px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="manage.php">จัดการข้อมูล</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a class="nav-link text-uppercase text-expanded" href="products.php">รายงาน</a>
+                    </li>
+                    <li class="nav-item px-lg-4">
+                        <a href="" class="nav-link text-uppercase text-expanded ">
+                            <span class="label"> ออกจากระบบ</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-section about-heading">
+        <div class="container">
+            <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/disease.jpg" alt="">
+            <div class="about-heading-content">
+                <div class="row">
+                    <div class="col-xl-11 col-lg-10 mx-auto">
+                        <div class="bg-faded rounded p-5">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-lower">จัดการโรค</span>
+
+                            </h2>
+
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">ชื่อโรค</th>
+                                        <th scope="col">อาการ</th>
+
+                                        <th scope="col">แก้ไข</th>
+                                        <th scope="col">ลบ</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <td>Mark</td>
+                                        <td>mMarkMarkMarkMarkMarkMarkMarkMarkMarkdo</td>
+                                        <td>
+                                          <!-- คลิกแก้ไข จะเด้ง pop up -->
+                                            <div class="portfolio-link" href="#diseaseUpdate" data-toggle="modal">
+                                                <button class="btn btn-primary" type="button">แก้ไข </button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" type="button"> ลบ </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <td>Mark</td>
+                                        <td>mMarkMarkMarkMarkMarkMarkMarkMarkMarkdo</td>
+                                        <td>
+                                          <!-- คลิกแก้ไข จะเด้ง pop up -->
+                                            <div class="portfolio-link" href="#diseaseUpdate" data-toggle="modal">
+                                                <button class="btn btn-primary" type="button">แก้ไข </button>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-danger" type="button"> ลบ </button>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                            <!-- คลิกเพิ่มโรค จะเด้ง pop up -->
+                            <div class="container" style="text-align:center;">
+                                <div class="portfolio-link" href="#disease" data-toggle="modal">
+                                    <button type="button" class="btn btn-primary"> เพิ่มโรค</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; Your Website 2018</p>
+        </div>
+    </footer>
+
+    <!-- disease คลิกเพิ่มโรค จะแสดง pop upนี้ -->
+    <div class="portfolio-modal modal fade" id="disease" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 ">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">เพิ่มโรค</h2>
+
+                                <form method="post" action="" class="alt" id="positionAdd"></form>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <p for="exampleInputEmail1">ชื่อโรค</p>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="" id="" placeholder="Enter name" type="text">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p for="exampleInputEmail1">อาการ</p>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <textarea class="form-control" name="story" id="story" placeholder="Enter your message" rows="6"></textarea>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <br>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input type="submit" value="บันทึก " class="btn btn-primary" onclick="return confirm('คุณต้องทำรายการนี้ ใช่หรือไม่ ?')"
+                                        />
+                                        <input type="reset" class="btn btn-danger" value="ล้าง" />
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- diseaseUpdate  คลิกแก้ไข แสดง pop up นี้ -->
+    <div class="portfolio-modal modal fade" id="diseaseUpdate" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl"></div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 ">
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">แก้ไขโรค</h2>
+
+                                <form method="post" action="" class="alt" id="positionAdd"></form>
+                                <div class="row">
+                                    <div class="col-sm-2">
+                                        <p for="exampleInputEmail1">ชื่อโรค</p>
+                                    </div>
+                                    <div class="col-sm-10">
+                                        <input type="text" class="form-control" name="" id="" placeholder="Enter name" type="text" value="ไต">
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <p for="exampleInputEmail1">อาการ</p>
+                                    </div>
+                                    <div class="col-sm-10 mx-auto" >
+                                        <textarea class="form-control" name="" id="" rows="6">ปวดหัวตัวร้อน ไม่ค่อยได้พักผ่อน ผอมแห้งแรงน้อย กินไม่ได้นอนไม่หลับ กระส่ายกระสับตับพิการอาหารไม่ย่อย ลิ้นกร่อยไม่รู้รส มีกรดในกระเพาะ กระดูกเปาะฟันปวด มีปลวดในลำไส้ เลยหายใจเม้น เหม็น เช้าเย็นก็อาเจียน วิงเวียนเป็นประจำ บอบช้ำเป็นแผล มีขี้รังแคเต็มศีรษะ ถ่ายอุจจาระไม่ค่อยออก ทั้งหัวเข่าข้อศอกก็ถลอกตกสะเก็ด เป็นเม็ดผื่นคัน เลือกออกตามไรฟัน ความดันโลหิตสู๊งๆ
+                                        </textarea>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <br>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <input type="submit" value="บันทึก " class="btn btn-primary" onclick="return confirm('คุณต้องทำรายการนี้ ใช่หรือไม่ ?')"
+                                        />
+                                        <input type="reset" class="btn btn-danger" value="ล้าง" />
+                                    </div>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="../User/vendor/jquery/jquery.min.js"></script>
+    <script src="../User/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="../User/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="../User/js/jqBootstrapValidation.js"></script>
+    <script src="../User/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="../User/js/agency.min.js"></script>
+
+</body>
+
+</html>
